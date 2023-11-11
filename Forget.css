@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/back.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap{
+    width: 420px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 2px solid rgba(225, 255, 255, .2);
+}
+
+.wrap h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrap .input-box {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: black;
+}
+
+.input-box i{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrap .btn {
+    width: 100%;
+    height: 45px;
+    background: floralwhite;
+    border-color: black;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.input-box:hover input {
+    border-color: black;
+    background-color: silver;
+}
+
+.btn:hover{
+    border-color: black;
+    transition-duration: 1s;
+}
+
+.btn {
+    border: black;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    transition: border-color 0.3s;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.wrap .back-to-login{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.back-to-login p{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-to-login p a:hover{
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.btn:hover{
+    box-shadow: 0 0 35px var(--clr);
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    top: 0;
+    width: 10px;
+    height: 4px;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5%;
+}
+
+.btn{
+    position: relative;
+    z-index: 1;
+}
+
+.btn:hover::after{
+    width: 20px;
+    left: 20%;
+}
